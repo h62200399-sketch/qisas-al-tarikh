@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11130f">
+  <meta name="description" content="قصص التاريخ — حكايات صنعت التاريخ. أفلام وثائقية تاريخية إسلامية وأدوات ذكية لتطوير السكريبتات والأفكار.">
+  <title>قصص التاريخ | حكايات صنعت التاريخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#10120f;--panel:#191c17;--panel2:#20231c;--gold:#d7b36a;--gold2:#f0d79e;--text:#f4f0e7;--muted:#b4b2a7;--line:#37382e;--green:#6f8062}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'Cairo',sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+    .container{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#10120feF;border-bottom:1px solid #ffffff12;backdrop-filter:blur(12px)}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .seal{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:'Amiri',serif;font-size:24px}
+    .brand small{display:block;color:var(--muted);font-weight:500;font-size:11px;line-height:1.2}.navlinks{display:flex;gap:22px;align-items:center;color:#d5d0c4;font-size:14px}
+    .navlinks a:hover{color:var(--gold2)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:9px;padding:7px 12px}
+    .hero{position:relative;min-height:570px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(16,18,15,.25),rgba(16,18,15,.94) 72%),linear-gradient(0deg,#10120f 0%,transparent 40%),url('https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 45%,#d4a54a12,transparent 40%);pointer-events:none}.hero-content{position:relative;z-index:1;max-width:690px;padding:80px 0}
+    .eyebrow{color:var(--gold);font-size:13px;letter-spacing:.4px;font-weight:700}.hero h1{font-family:'Amiri',serif;font-size:clamp(42px,7vw,76px);line-height:1.25;margin:14px 0 16px;font-weight:700}
+    .hero h1 span{color:var(--gold2)}.hero p{color:#d1cec3;max-width:600px;font-size:17px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;border:1px solid var(--gold);background:var(--gold);color:#1a1a12;font-weight:800;transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:var(--gold2)}.btn.ghost{background:transparent;color:var(--text);border-color:#8a805f}.btn.ghost:hover{background:#ffffff0d}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}.stat{background:var(--bg);padding:22px;text-align:center}.stat strong{display:block;color:var(--gold2);font-size:22px}.stat span{font-size:12px;color:var(--muted)}
+    section{padding:76px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:28px}.section-head h2{font-family:'Amiri',serif;font-size:38px;margin:0;line-height:1.3}.section-head p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .line-accent{width:55px;height:3px;background:var(--gold);margin-bottom:14px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#8d7848}
+    .thumb{height:205px;background-size:cover;background-position:center;position:relative}.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#191c17,transparent 70%)}
+    .tag{position:absolute;z-index:1;top:14px;right:14px;background:#10120ed9;color:var(--gold2);border:1px solid #b79b5c70;border-radius:30px;padding:4px 11px;font-size:11px}
+    .card-body{padding:19px}.card h3{font-family:'Amiri',serif;font-size:25px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;margin:0 0 16px}.card-foot{display:flex;align-items:center;justify-content:space-between;color:var(--gold2);font-size:12px}
+    .tools{background:linear-gradient(180deg,#141710,#10120f)}.tool-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:start}
+    .tool-intro{padding:22px 0}.tool-intro h2{font-family:'Amiri',serif;font-size:42px;line-height:1.3;margin:12px 0}.tool-intro p{color:var(--muted)}
+    .toolbox{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}.field{margin-bottom:16px}.field label{display:block;font-size:13px;color:#e2d7bb;margin-bottom:7px;font-weight:700}
+    input,textarea,select{width:100%;border-radius:8px;border:1px solid #44463a;background:#10120f;color:var(--text);padding:12px;outline:none}
+    input:focus,textarea:focus,select:focus{border-color:var(--gold)}textarea{min-height:100px;resize:vertical}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tool-buttons{display:flex;gap:10px;flex-wrap:wrap}.output{margin-top:18px;display:none}.output textarea{min-height:230px}.hint{font-size:12px;color:var(--muted);margin-top:10px}
+    .note{border-right:3px solid var(--gold);background:#d7b36a0c;padding:14px 16px;color:#d4cfbf;font-size:13px;border-radius:6px;margin-top:18px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about-art{min-height:330px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(0deg,#10120fdd,transparent),url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80') center/cover}
+    .about-copy h2{font-family:'Amiri',serif;font-size:38px;margin:0 0 12px}.about-copy p{color:var(--muted)}.pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid var(--line);padding:6px 12px;border-radius:30px;color:#e6d8b9;font-size:12px}
+    .cta{background:linear-gradient(120deg,#242419,#171a14);border:1px solid #665b3e;border-radius:16px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta h2{font-family:'Amiri',serif;font-size:34px;margin:0}.cta p{color:var(--muted);margin:5px 0 0}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .small-link{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:800px){.navlinks{display:none;position:absolute;top:73px;right:4%;left:4%;background:#191c17;border:1px solid var(--line);padding:16px;border-radius:12px;flex-direction:column;align-items:stretch;gap:12px}.navlinks.open{display:flex}.menu{display:block}.hero{min-height:560px;background-position:35% center}.hero-content{padding:65px 0}.cards{grid-template-columns:1fr 1fr}.tool-layout,.about-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.about-art{min-height:250px}}
+    @media(max-width:520px){.cards{grid-template-columns:1fr}.thumb{height:220px}.two{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}.hero h1{font-size:47px}.hero p{font-size:15px}.toolbox{padding:17px}.cta{align-items:flex-start;flex-direction:column}.section-head h2{font-size:32px}.nav{min-height:68px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="قصص التاريخ - الرئيسية">
+      <span class="seal">ق</span><span>قصص التاريخ<small>حكايات صنعت التاريخ</small></span>
+    </a>
+    <button class="menu" id="menuBtn" aria-label="فتح القائمة">القائمة ☰</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#home">الرئيسية</a><a href="#films">الأفلام والقصص</a><a href="#studio">استوديو الذكاء الاصطناعي</a><a href="#about">عن المشروع</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="eyebrow">وثائقيات تاريخية بروح سينمائية</div>
+      <h1>حكايات صنعت<br><span>التاريخ</span></h1>
+      <p>نعود إلى صفحات التاريخ الإسلامي، ونروي قصص القادة والعلماء والمعارك والتحولات الكبرى بأسلوب بصري مشوّق، مع الحرص على التمييز بين الرواية التاريخية الموثقة والمشهد الدرامي المتخيّل.</p>
+      <div class="actions"><a class="btn" href="#films">اكتشف الحكايات <span>←</span></a><a class="btn ghost" href="#studio">جرّب استوديو الأفكار</a></div>
+    </div>
+  </section>
+  <div class="stats">
+    <div class="stat"><strong>التاريخ الإسلامي</strong><span>قصص وأحداث وشخصيات</span></div>
+    <div class="stat"><strong>أسلوب سينمائي</strong><span>سرد بصري مشوّق</span></div>
+    <div class="stat"><strong>أدوات ذكية</strong><span>للتخطيط والإبداع</span></div>
+  </div>
+
+  <section id="films">
+    <div class="container">
+      <div class="section-head"><div><div class="line-accent"></div><h2>من صفحات التاريخ</h2><p>نماذج أولية يمكنك تعديلها وإضافة روابط فيديوهاتك الحقيقية إليها.</p></div><a class="small-link" href="#studio">اصنع فكرة جديدة ←</a></div>
+      <div class="cards">
+        <article class="card"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=900&q=80')"><span class="tag">قيادة وعدل</span></div><div class="card-body"><h3>عمر بن الخطاب</h3><p>قراءة تاريخية في تجربة الحكم والعدل وبناء الدولة في صدر الإسلام.</p><div class="card-foot"><span>سيرة وشخصيات</span><a href="#studio">طوّر الفكرة ←</a></div></div></article>
+        <article class="card"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80')"><span class="tag">قادة ومعارك</span></div><div class="card-body"><h3>القعقاع بن عمرو</h3><p>كيف ندرس أخبار الفرسان والمعارك ونفصل بين المصادر والروايات المتداولة؟</p><div class="card-foot"><span>تاريخ عسكري</span><a href="#studio">طوّر الفكرة ←</a></div></div></article>
+        <article class="card"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80')"><span class="tag">رحلات وحضارة</span></div><div class="card-body"><h3>ابن بطوطة</h3><p>رحلة عبر المدن والطرق والثقافات كما تصفها كتب الرحلات والمصادر التاريخية.</p><div class="card-foot"><span>رحلات واكتشافات</span><a href="#studio">طوّر الفكرة ←</a></div></div></article>
+      </div>
+      <div class="note">هذه البطاقات أمثلة تحريرية وليست روابط أفلام منشورة. أضف رابط يوتيوب أو فيسبوك لكل قصة بعد نشر الفيديو، واحذف أي معلومة لا تتحقق من مصدرها.</div>
+    </div>
+  </section>
+
+  <section class="tools" id="studio">
+    <div class="container tool-layout">
+      <div class="tool-intro"><div class="eyebrow">استوديو الأفكار الذكي</div><h2>من فكرة صغيرة<br>إلى فيلم تاريخي</h2><p>أنشئ مسودة أولية لسكريبت وثائقي، أو برومبت للمشاهد السينمائية، أو خطة إنتاج. الأداة هنا تعمل داخل المتصفح وتجهز لك نصًا تنسخه إلى ChatGPT أو أي مساعد ذكاء اصطناعي تستخدمه.</p><div class="note">مهم: هذه النسخة لا تتصل تلقائيًا بنموذج ذكاء اصطناعي مدفوع؛ إنها مولّد قوالب ذكي محليًا. لا تضع مفاتيح API السرية في الموقع المنشور.</div></div>
+      <div class="toolbox">
+        <div class="field"><label for="topic">موضوع الفيلم أو الشخصية</label><input id="topic" placeholder="مثال: فتح بيت المقدس أو ابن بطوطة"></div>
+        <div class="two">
+          <div class="field"><label for="format">نوع المخرج</label><select id="format"><option value="script">سكريبت تعليق صوتي</option><option value="visual">برومبت صور سينمائية</option><option value="video">برومبت تحريك وصناعة فيديو</option><option value="plan">خطة إنتاج كاملة</option></select></div>
+          <div class="field"><label for="duration">مدة الفيديو</label><select id="duration"><option>30–60 ثانية</option><option selected>3–5 دقائق</option><option>5–8 دقائق</option><option>10–15 دقيقة</option></select></div>
+        </div>
+        <div class="field"><label for="tone">الأسلوب</label><select id="tone"><option>وثائقي رصين وموثّق</option><option>سينمائي مشوّق بإيقاع سريع</option><option>تعليمي مبسّط</option><option>ملحمي مع توضيح المشاهد المتخيّلة</option></select></div>
+        <div class="field"><label for="notes">ملاحظات إضافية (اختياري)</label><textarea id="notes" placeholder="مصادر محددة، عدد المشاهد، الجمهور المستهدف، اللهجة أو الفصحى..."></textarea></div>
+        <div class="tool-buttons"><button class="btn" id="generateBtn">أنشئ البرومبت</button><button class="btn ghost" id="clearBtn">مسح الحقول</button></div>
+        <div class="output" id="outputArea"><div class="field"><label for="result">النص الجاهز للنسخ</label><textarea id="result" readonly></textarea></div><div class="tool-buttons"><button class="btn" id="copyBtn">نسخ النص</button><span class="hint" id="copyStatus" aria-live="polite"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-art" role="img" aria-label="مشهد جبلي سينمائي"></div>
+      <div class="about-copy"><div class="line-accent"></div><h2>التاريخ أمانة قبل أن يكون مشهدًا</h2><p>هدف «قصص التاريخ» هو تقديم محتوى تاريخي إسلامي يجمع بين التشويق البصري واحترام المصادر. نستخدم الذكاء الاصطناعي للمساعدة في التخطيط والإنتاج، لا لاستبدال التحقق من الروايات أو اختلاق الوقائع.</p><p>عند إعداد كل فيلم، اجمع المراجع، وقارن الروايات، وميّز بوضوح بين ما تثبته المصادر وما يُستخدم لإعادة التصوير الدرامي.</p><div class="pill-row"><span class="pill">توثيق ومراجع</span><span class="pill">سرد سينمائي</span><span class="pill">لغة عربية فصيحة</span><span class="pill">إنتاج بالذكاء الاصطناعي</span></div></div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container"><div class="cta"><div><h2>هل لديك حكاية تستحق أن تُروى؟</h2><p>أضف روابط قناتك ومنصاتك هنا بعد إنشاء الصفحات الرسمية.</p></div><div class="actions"><a class="btn ghost" href="#films">تصفّح القصص</a><a class="btn" href="#studio">ابدأ التخطيط</a></div></div></div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> قصص التاريخ — حكايات صنعت التاريخ</span><span>موقع تعريفي تجريبي قابل للتطوير · صُنع بعناية</span></div></footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn'), navlinks=document.getElementById('navlinks');
+  menuBtn.addEventListener('click',()=>navlinks.classList.toggle('open'));
+  navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const prompts={
+    script:(t,d,s,n)=>`أنت كاتب أفلام وثائقية متخصص في التاريخ الإسلامي. اكتب سكريبتًا باللغة العربية الفصحى عن: «${t}».\nالمدة المستهدفة: ${d}.\nالأسلوب: ${s}.\nالمطلوب:\n1) افتتاحية قوية وجذابة دون مبالغة مضللة.\n2) سرد واضح بإيقاع مناسب للتعليق الصوتي.\n3) افصل بين الحقائق الثابتة والروايات المختلف فيها، ولا تخترع حوارًا أو تفاصيل على أنها حقيقة.\n4) أرفق قائمة بالمصادر الأولية والمراجع الموثوقة التي ينبغي التحقق منها، ولا تخترع بيانات كتب أو صفحات.\n5) اختم بخلاصة مؤثرة.\nملاحظات المستخدم: ${n||'لا توجد'}.\nقدّم السكريبت أولًا ثم ملاحظات التوثيق.`,
+    visual:(t,d,s,n)=>`أنشئ خطة برومبتات لتوليد 8–12 صورة سينمائية متناسقة لفيلم تاريخي إسلامي عن «${t}».\nالمدة المستهدفة: ${d}. الأسلوب: ${s}.\nثبّت الهوية البصرية والإضاءة والألوان والملابس والعمارة بين المشاهد. استخدم بيئات تاريخية مناسبة، تكوينًا سينمائيًا، تفاصيل واقعية، عدسات وإضاءة احترافية، 16:9، دون نصوص أو شعارات داخل الصورة.\nتجنب تصوير الأنبياء، ولا تعرض المشاهد الدرامية المتخيلة على أنها وثائق تاريخية. اكتب رقم كل مشهد ووصفه وبرومبته السلبي.\nملاحظات: ${n||'لا توجد'}.`,
+    video:(t,d,s,n)=>`أنت مخرج أفلام وثائقية ومصمم حركة. اكتب خطة لتحويل صور ومقاطع عن «${t}» إلى فيديو تاريخي عربي مدته ${d} بأسلوب ${s}.\nقدّم جدولًا يتضمن: رقم المشهد، المدة، حركة الكاميرا، حركة العناصر، الانتقال، المؤثرات الصوتية، نص التعليق الصوتي المقترح، وتعليمات الاستمرارية البصرية. اجعل الحركة واقعية وغير مبالغ فيها، وتجنب تشوه الوجوه والأيدي والكتابة. ميّز إعادة التمثيل الدرامي عن الوقائع الموثقة.\nملاحظات: ${n||'لا توجد'}.`,
+    plan:(t,d,s,n)=>`ضع خطة إنتاج متكاملة لفيلم تاريخي إسلامي عن «${t}» مدته ${d} بأسلوب ${s}.\nرتّب العمل إلى: سؤال بحثي، قائمة مصادر للتحقق، زاوية السرد، هوك الافتتاح، هيكل السكريبت، قائمة المشاهد، برومبتات الصور، خطة التحريك، التعليق الصوتي، الموسيقى والمؤثرات المرخصة، المونتاج، العنوان والصورة المصغرة والوصف والكلمات المفتاحية.\nلا تختلق مصادر أو وقائع؛ أشر إلى ما يحتاج تحققًا مستقلًا. ملاحظات المستخدم: ${n||'لا توجد'}.`
+  };
+  document.getElementById('generateBtn').addEventListener('click',()=>{
+    const topic=document.getElementById('topic').value.trim();
+    if(!topic){document.getElementById('topic').focus();alert('اكتب موضوع الفيلم أولًا.');return}
+    const type=document.getElementById('format').value, duration=document.getElementById('duration').value, tone=document.getElementById('tone').value, notes=document.getElementById('notes').value.trim();
+    document.getElementById('result').value=prompts[type](topic,duration,tone,notes);
+    document.getElementById('outputArea').style.display='block';
+    document.getElementById('copyStatus').textContent='';
+    document.getElementById('outputArea').scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  document.getElementById('copyBtn').addEventListener('click',async()=>{
+    const text=document.getElementById('result').value;
+    try{await navigator.clipboard.writeText(text);document.getElementById('copyStatus').textContent='تم نسخ النص.'}
+    catch(e){const el=document.getElementById('result');el.select();document.getElementById('copyStatus').textContent='حدّد النص وانسخه يدويًا.'}
+  });
+  document.getElementById('clearBtn').addEventListener('click',()=>{
+    ['topic','notes','result'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('outputArea').style.display='none';document.getElementById('copyStatus').textContent='';
+  });
+</script>
+</body>
+</html>
